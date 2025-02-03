@@ -11,7 +11,7 @@
 	.aBox li>#first{
 		color: blue;
 
-	}
+	} 
 	.aBox li>#second{
 		
 		font-size: 20px;

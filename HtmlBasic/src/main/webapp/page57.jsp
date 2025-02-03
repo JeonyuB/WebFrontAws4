@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 <title>테이블</title>
 </head>
-<body>
+<body> 
 	<h1>표 만들기</h1>
 	<h2>1행1열 표 만들기</h2>
 	<table border="1">

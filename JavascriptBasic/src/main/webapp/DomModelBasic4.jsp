@@ -9,7 +9,7 @@
 <style type="text/css">
 #theBox {
 	background-color: #ddd;
-}
+} 
 </style>
 
 </head>

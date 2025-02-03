@@ -42,6 +42,9 @@
 </body>
 
 <script type="text/javascript">
+
+	var copyOlist = document.firstDiv();
+	
 	
 </script>
 
