@@ -43,8 +43,34 @@
 
 <script type="text/javascript">
 
-	var copyOlist = document.firstDiv();
+	var firDiv = document.getElementById('firstDiv');
 	
+	//body back: skyblue
+	firDiv.parentNode.setAttribute('style', 'background-color: skyblue;');
+	//setAttribute('style', 'background-color: blue;');
+	
+	//p: 30px blue 
+	firDiv.getElementsByTagName('p')[0].setAttribute('style', 'color: blue; font-size: 30px;');
+	
+	
+	var secDiv = document.getElementById('secondDiv');
+	//가운데 정렬
+	secDiv.getElementsByTagName('h1')[0].setAttribute('style', 'text-align: center;');
+	//li 글자들 변경
+	
+	var scDivUlist = secDiv.getElementsByClassName('ulTagGroup')[0];
+	var textli=document.createTextNode('하');
+
+	for(var i=0 ; i<4 ;i++){
+		
+		scDivUlist.removeChild(children[0]);	
+	}
+	
+	
+// 	for(var i=0 ; i<4 ;i++){
+// 		for(var j=0 ; j<i ;j--){
+// 		scDivUlist.removeChild(children[0]);	
+// 	}
 	
 </script>
 
