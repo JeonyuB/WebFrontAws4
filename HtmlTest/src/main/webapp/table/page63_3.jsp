@@ -7,7 +7,7 @@
 <title>다쓸어버릴거야</title>
 </head>
 <body>
-	<table border="1" width="300px" height="100px" style="text-align: center;">
+	<table border="1"  style="text-align: center;width: 300px; height:100px">
 		<tr>
 		    <td colspan="2" >1번</td>
 		    <td>1-3</td>
