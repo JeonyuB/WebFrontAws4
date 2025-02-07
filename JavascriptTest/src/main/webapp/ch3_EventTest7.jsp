@@ -20,33 +20,36 @@
 		var btnTagObj = document.getElementById('btnTag');
 		var imgTagObj = document.getElementById('imgTag');
 		
-		//이미지 경로 저장
-		var imgSrc = imgTagObj.src;
-		
 		//랜덤으로 이미지 변경
 		btnTagObj.addEventListener('click', function() {
 			var randomNum = parseInt(Math.random()*7)+1;
 			
 			//랜덤번호로 이미지 주소 변경
 			imgTagObj.src = "./images/img" + randomNum + ".jpg";
+			
 		});	
 		
-	
+/* 		console.log(imgTagObj); */
+		
+		
 		imgTagObj.addEventListener('mouseover', function() {
-	
-				imgTagObj.setAttribute('style', 'width: 30px; height: 20px;');
-	
+			
+			var imgTagObjSize = 'width: '+ (imgTagObj.width+30) +
+						'px;height:'+(imgTagObj.height+20)+'px;';
+			
+			imgTagObj.setAttribute('style', imgTagObjSize);
+
 		});
-	
+
 		//랜덤번호로 변경된 이미지가 저장된 주소(imgSrc)의 원본 크기를 불러옴
 		imgTagObj.addEventListener('mouseout', function() {
-			imgTagObj.setAttribute('style', 'width: ' + imgSrc.width
-					+ '; height: ' + imgSrc.height);
+			//setAttribute는 style을 새로 설정함. 
+			//.style. 어쩌고 ='인덱스'; 는 원래 style에 추가함.
+			imgTagObj.setAttribute('style', 'width: ' + imgTagObj.width
+					+ '; height: ' + imgTagObj.height);
 		});
 
-	}	
-	
-
+	}
 </script>
 
 <body>
